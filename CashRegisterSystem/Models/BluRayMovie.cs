@@ -7,17 +7,18 @@ namespace CashRegisterSystem.Models
 {
     public class BluRayMovie
     {
-        public int Price { get; set; }
-        public int Discount { get; set; }
+        private static int price = 39;
+        private static double discount = 0.85;
+        public static int Price { get => price; set => price = value; }
 
         /// <summary>
         /// Removes 15 percent on price
         /// </summary>
         /// <param name="price">Blu-Ray price</param>
-        /// <returns>Discounted price</returns>
-        public double BluRayDiscount(double price)
+        /// <returns>Returns total price with 15 percent discount</returns>
+        public static double BluRayDiscount(double price)
         {
-            return price * 0.85;
+            return price * discount;
         }
     }
 }
