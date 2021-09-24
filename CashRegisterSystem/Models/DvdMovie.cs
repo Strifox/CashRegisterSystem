@@ -20,6 +20,5 @@ namespace CashRegisterSystem.Models
         {
             return price * discount;
         }
-
     }
 }

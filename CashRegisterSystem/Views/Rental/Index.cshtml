@@ -1,0 +1,52 @@
+﻿@model Customer
+
+@{
+    ViewData["Title"] = "RentalView";
+}
+
+<h1>Hyr film</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Namn
+            </th>
+            <th>
+                Medlemskap
+            </th>
+            <th>
+                Antal Dvd filmer
+            </th>
+            <th>
+                Antal Blu-Ray filmer
+            </th>
+            <th>
+                Total Pris
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Html.TextBoxFor(m => m.Name)
+            </td>
+            <td>
+                @Html.CheckBoxFor(m => m.Membership)
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.DvdMoviesRented)
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.BluRayMoviesRented)
+            </td>
+            <td>
+                @Html.DisplayFor(m => m.TotalPrice)
+            </td>
+            <td>
+              <input type="submit"  class="btn btn-success" value="Hyr"/>
+            </td>
+        </tr>
+    </tbody>
+</table>

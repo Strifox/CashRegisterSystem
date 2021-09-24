@@ -12,6 +12,5 @@ namespace CashRegisterSystem.Models
         public List<DvdMovie> DvdMoviesRented { get; set; }
         public List<BluRayMovie> BluRayMoviesRented { get; set; }
         public int TotalPrice { get; set; }
-
     }
 }
