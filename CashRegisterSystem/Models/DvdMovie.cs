@@ -7,17 +7,18 @@ namespace CashRegisterSystem.Models
 {
     public class DvdMovie
     {
-        public int Price { get; set; }
-        public int Discount { get; set; }
+        private static int price = 29;
+        private static double discount = 0.90;
+        public static int Price { get => price; set => price = value; }
 
         /// <summary>
-        /// Removes 15 percent on price
+        /// Removes 10 percent on price
         /// </summary>
         /// <param name="price">Dvd price</param>
         /// <returns>Discounted Price</returns>
-        public double DvdDiscount(double price)
+        public static double DvdDiscount(double price)
         {
-            return price * 0.90;
+            return price * discount;
         }
 
     }

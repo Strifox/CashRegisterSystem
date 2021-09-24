@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashRegisterSystem", "CashRegisterSystem\CashRegisterSystem.csproj", "{7EAB9B21-F564-45F9-8AA7-32CAD0986746}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "xUnitTest-CashRegisterSystem", "xUnitTest-CashRegisterSystem\xUnitTest-CashRegisterSystem.csproj", "{FBEACA9E-3E49-4EA8-8A8E-3BB08D7D9ABC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7EAB9B21-F564-45F9-8AA7-32CAD0986746} = {7EAB9B21-F564-45F9-8AA7-32CAD0986746}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
